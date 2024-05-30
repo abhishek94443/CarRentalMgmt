@@ -9,7 +9,7 @@ public final class DBConnection {
 	static String userDB="root";
 	static String passDB="Ramayan786@";
 	static String url="jdbc:mysql://localhost:3306/car_rental";
-	static String driver="com.mysql.jdbc.Driver";
+	static String driver="com.mysql.cj.jdbc.Driver";
 	static Connection con; 
 	
 	public static Connection dbConnect() {
