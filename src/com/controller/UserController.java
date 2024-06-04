@@ -59,7 +59,7 @@ public class UserController {
                             hasSpecialSymbol = true;
                         }
                     }
-                    if(password.length() < 8 || !hasDigit || !hasLowercase || !hasUppercase || !hasSpecialSymbol) {
+                    if(password.length() < 8 && hasDigit== false && hasLowercase== false  && hasUppercase== false  && hasSpecialSymbol== false ) {
                         System.out.println("Wrong password format...try again");
                         break;
                     }
